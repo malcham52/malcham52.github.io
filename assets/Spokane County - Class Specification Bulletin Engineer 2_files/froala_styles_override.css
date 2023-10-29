@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/style/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('/style/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('/style/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('/style/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('/style/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('/style/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fr-box .fr-view pre {
+    padding: 0 4px 4px 0 ;
+    margin: 0;
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+}
+.fr-box .fr-view > dl,
+.fr-box .fr-view > ol,
+.fr-box .fr-view > ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.fr-box .fr-view ol, .fr-box .fr-view ul {
+    padding-left: 40px;
+}
+.fr-box .fr-view ol:not(type) {
+    list-style-type: decimal;
+}
+.fr-box .fr-view ol li {
+    list-style-type: inherit;
+}
+.fr-box .fr-view ol[type=a] li {
+    list-style-type: lower-latin;
+}
+.fr-box .fr-view ol[type=i] li {
+    list-style-type: lower-roman;
+}
+.fr-box .fr-view ul {
+    list-style-type: disc;
+}
+.fr-box .fr-view ul ul {
+    list-style-type: circle;
+}
+.fr-box .fr-view ul ul ul {
+    list-style-type: square;
+}
+.fr-box .fr-view ul li {
+    list-style-type: inherit;
+}
+
+.fr-box .fr-view p {
+    margin: 1em 0;
+}
+
+.second-toolbar a#logo {
+    display: none;
+}
+.fr-toolbar .fr-btn-grp {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.fr-selected-cell {
+    min-width: 620px;
+}
+button.fr-command.fr-btn {
+    margin: 4px 0 !important;
+}
+textarea.fr-code {
+    max-height: 690px !important;
+}
+div.fr-popup.fr-desktop.fr-above.fr-active {
+   z-index: 5 !important;
+}
+div.fr-autoplay-margin {
+	display: none;
+}
+.fr-box .fr-view, .fr-box .fr-view * {
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif !important;
+    font-size: 14px;
+}
+.fr-box .fr-view table td {
+    font-size: 14px;
+    font-family: 'proxima-nova', Helvetica, Arial, sans-serif;
+}
+
+div.froala-content-display>span.fr-video>p.video-url-left {
+	text-align: left !important;
+}

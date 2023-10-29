@@ -1,0 +1,63 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>IFrame</title></head>
+<body><script>var rx = rx || {};
+rx._ = rx._ || {};
+
+/**
+ *  Logging wrapper. Addresses lack of "console" support in IE9.
+ */
+rx._.log = function(message,a1) {
+    if (window.rx_debug) {
+        window.rx_debug += "INFO: " + message + "\n";
+    } else {
+        window.rx_debug = "INFO: " + message + "\n";
+    }
+    if (false && window.console) {
+        if (typeof a1 == "undefined"){
+            window.console.log(message);
+        } else {
+            window.console.log(message,a1);
+        }
+    }
+}
+
+/**
+ *  Logging wrapper. Addresses lack of "console" support in IE9.
+ */
+rx._.error = function(message,a1) {
+    if (window.rx_debug) {
+        window.rx_debug += "ERROR: " + message + "\n";
+    } else {
+        window.rx_debug = "ERROR: " + message + "\n";
+    }
+    if (false && window.console) {
+        if (typeof a1 == "undefined"){
+            window.console.error(message);
+        } else {
+            window.console.error(message,a1);
+        }
+    }
+};
+
+// ---------------------------------------------------------------------------------------------------------------------
+// SEND EVENT FROM I-FRAME
+// ---------------------------------------------------------------------------------------------------------------------
+rx._.log("Setting up iFrame logic for jsv3.recruitics.com");
+rx._.payload = {"viewer":{"v2_first":null,"v2_local":null,"v3_first":"7f78cf2a626311ebb5b5fd03c0e27d250c2f9e085f0b4311956c5966e8004de7","v3_first_samesite":"7f78cf2a626311ebb5b5fd03c0e27d250c2f9e085f0b4311956c5966e8004de7","v3_local":null,"v3_param":null},"referrer":"https://www.governmentjobs.com/careers/spokanecountywa/classspecs/1166278?keywords=engineer%20&pagetype=classSpecifications","title":"Spokane County - Class Specification Bulletin","eventType":"pageview","pageType":"Page","scriptId":"a40f2b4c-d9f2-11e7-8bfd-cf0059c1cdfc","partnerId":"faefc615-d37d-11e7-b7f1-1d503d7533d2","cid":"1315","versionId":"017a2c14-7583-11e9-a2a4-e399900f14a5","uri":"https://agency.governmentjobs.com/spokanecountywa/default.cfm?action=specbulletin&ClassSpecID=1166278&headerfooter=0","anonymizeIp":false,"nvp":{}};
+rx._.sendPayload = function(fn) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            fn(xhttp.responseText);
+        }
+    }
+    xhttp.open("POST", "//jsv3.recruitics.com/event.txt", true); // async post to event.txt
+    xhttp.send(JSON.stringify(rx._.payload)); // add the payload and send it
+};
+rx._.handleResponse = function(viewerId){
+    if (window.parent && window.parent.postMessage) {
+        window.parent.postMessage("rx_viewer=" + viewerId, "*");
+    }
+};
+rx._.sendPayload(rx._.handleResponse);</script>
+</body></html>

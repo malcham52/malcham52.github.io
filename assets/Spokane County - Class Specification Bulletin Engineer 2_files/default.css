@@ -1,0 +1,54 @@
+/* for color changes : #326B9C is the default */
+.gj-container * {font-family: arial;font-size: 12px;}
+.gj-container td{font-family: arial;font-size: 1em;}
+.gj-container th{font-family: arial;font-size: 1em;}
+.gj-header {text-align: center;}
+.gj-nav {float: left;width: 200px;}
+.gj-nav ul {list-style: none;margin: 0;padding: 0;}
+.gj-nav a {display: block;padding: 3px;}
+.gj-nav a:hover {color: #006;}
+.gj-nav a.selected {color: red;}
+
+/* below needs to be redone */
+
+.gj-container .invalidtext {color: #ff0000;}
+.gj-container TD.jobtitle {background: #E6E6E6;border: 1px solid #000000;border-bottom-width: 1px;border-top-width: 0px;border-left-width: 0px;border-right-width: 1px;}
+.gj-container A.jobtitle {background: #E6E6E6;}
+.gj-container TD.jobtitlelast {background: #E6E6E6;border: 1px solid #000000;border-bottom-width: 1px;border-top-width: 0px;border-left-width: 0px;border-right-width: 0px;}
+.gj-container TD.cstitle {border: 1px solid #000000;border-bottom-width: 0px;border-top-width: 0px;border-left-width: 0px;border-right-width: 1px;text-align:left;}
+.gj-container TD.cstitlelast {text-align:left;}
+.gj-container A.cstitle {color: #003366;border: 1px solid #000000;border-bottom-width: 0px;border-top-width: 0px;border-left-width: 0px;border-right-width: 0px;background-color:transparent;text-decoration:underline;}
+.gj-container TD.ctg {background: #eeeeee;color: #003366;border: 1px solid #ffffff;border-bottom-width: 1px;border-top-width: 0px;border-left-width: 0px;border-right-width: 1px;}
+.gj-container td.third{width:33%;}
+.gj-container .cathdr {background: #264F5B;font-weight: bold;color: #ffffff;}
+.gj-container .currentstyle {background: #264F5B;font-weight: bold;color: #ffffff;}
+.gj-container a.activelink {background: #264F5B;font-weight: bold;text-decoration:underline;color: #ffffff;}
+.gj-container a.activelink:visited {background: #264F5B;font-weight: bold;text-decoration:underline;color: #ffffff;}
+.gj-container td.catinst {color: #000000; font-weight:normal;text-align:left;background-color:#ffffff;}
+.gj-container TD.jobdesc {background: #ffffff;color: #000000;border: 1px solid #000000;border-bottom-width: 1px;border-top-width: 0px; border-left-width: 0px;border-right-width: 0px;}
+.gj-container .jobheadings {background: #E6E6E6;color: #000000;font-weight: bold;border: 1px solid #000000;}
+.gj-container .jobdetail {background: #ffffff;color: #000000;border: 1px solid #000000;border-bottom-width: 0px;border-top-width: 0px;}
+.gj-container .jobdetail div{width:100%;}
+.gj-container .jobdetail ul {margin-left:20px;}
+.gj-container .jobdetail li{margin-left:20px;}
+.gj-container TD.jobdetailbot { border: 1px solid #000000;border-bottom-width: 1px;border-top-width: 0px;}
+.gj-container TD.tblbordbot {border: 1px solid #000000;border-bottom-width: 1px;border-top-width: 0px;border-left-width: 0px;border-right-width: 0px;}
+.gj-container TD.tblbordtop {border: 1px solid #000000;border-bottom-width: 0px;border-top-width: 1px;border-left-width: 0px;border-right-width: 0px;}
+.gj-container .maroon {color: #990000;}
+.gj-container td.tabledata {border: 1px solid #666666;border-bottom-width: 1px;border-top-width: 0px;border-left-width: 1px;border-right-width: 1px;}
+.gj-container td.desc {border: 1px solid #666666;border-bottom-width: 1px;border-top-width: 0px;border-left-width: 1px;border-right-width: 1px;}
+.gj-container a.applyonline {color: #003366;font-weight: bold;}
+.gj-container a.applyonline:visited{color: #003366;font-weight: bold;}
+.gj-container a.applyonline:hover {color:#3399ff;	text-decoration: underline;font-weight: bold;}
+.gj-container div.tabArea {font-size: 100%;font-weight: bold;}
+.gj-container a.tab { background-color: #264F5B; border: 1px solid #000000;color: #FFFFFF;border-bottom-width: 0px;padding: 2px 1em 2px 1em;position: relative;font-weight:bold; text-decoration: none;top: -1px;z-index: 100;}
+.gj-container a.tab, a.tab:visited {color: #FFFFFF;}
+.gj-container a.tab:hover {background-color: #E6E6E6;color: #606060;}
+.gj-container a.tab.activeTab {background-color: #E6E6E6;color: #000000;}
+.gj-container a.tab.activeTab:hover {background-color: #E6E6E6;color: #000000;}
+.gj-container a.tab.activeTab:visited {background-color: #E6E6E6;color: #000000;}
+.gj-container a.tab.activeTab {z-index: 102;}
+.gj-container div.tabMain {background-color: #E6E6E6;border: 1px solid #000000;padding: 0.2em;position: relative;z-index: 101;}
+.gj-container a.NGVRequestJobLink{color:  #0000C6;font-weight: bold;}
+.gj-container a.NGVPrintLink{color:  #0000C6;}
+.gj-container .titleheading {padding-bottom:5px; padding-top:5px;}

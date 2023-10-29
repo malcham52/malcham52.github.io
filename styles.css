@@ -14,11 +14,18 @@ a{
     font-style: italic;
 }
 
+.card-title{
+    background: gainsboro;
+    padding: 5px 5px;
+    margin: 0;
+}
+
 #the-footer{
     background: #263238;
     color: white;
     padding: 10px 0;
     font-size: 13px;
+    width: 100%;
 }
 
 .breadcrumb li a    {
@@ -26,7 +33,7 @@ a{
 }
 
 .logo{
-    width: 35%;
+    max-width: 30%;
     height: auto;
 }
 
